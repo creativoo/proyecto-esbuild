@@ -10,11 +10,17 @@
   "description": "create a counter whit esbuild",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "esbuild": "^0.17.19",
+    "esbuild-serve": "^1.0.1"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "esbuild src/index.tsx --bundle --minify --sourcemap --outfile=public/bunde.js",
+    "build:dev": "node esbuild.dev.js",
+    "start": "node esbuild.dev.js -w",
+    "open": "start public/index.html"
   },
   "keywords": [],
-  "author": "",
+  "author": "Diego Iberri",
   "license": "ISC"
 }
