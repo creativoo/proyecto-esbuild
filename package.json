@@ -12,13 +12,15 @@
   "main": "index.js",
   "devDependencies": {
     "esbuild": "^0.17.19",
-    "esbuild-serve": "^1.0.1"
+    "esbuild-serve": "^1.0.1",
+    "gh-pages": "^5.0.0"
   },
   "scripts": {
     "build": "esbuild src/index.tsx --bundle --minify --sourcemap --outfile=public/bunde.js",
     "build:dev": "node esbuild.dev.js",
     "start": "node esbuild.config.js -w",
-    "open": "start public/index.html"
+    "open": "start public/index.html",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "Diego Iberri",
