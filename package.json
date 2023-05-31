@@ -20,10 +20,9 @@
     "build:dev": "node esbuild.dev.js",
     "start": "node esbuild.config.js -w",
     "open": "start public/index.html",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d public"
   },
   "keywords": [],
   "author": "Diego Iberri",
   "license": "ISC",
   "type": "module"
-}

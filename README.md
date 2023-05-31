@@ -1,2 +1,2 @@
 # proyecto-esbuild
-create a counter whit esbuild
+project of a counter programmed in typescript, react and packaged in esbuild.
